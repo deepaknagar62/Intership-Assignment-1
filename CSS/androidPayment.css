@@ -1,0 +1,337 @@
+.header {
+    background-color: #f5f5f5; 
+    color: #0a0909; 
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.logo img {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px;
+}
+
+
+.site-name {
+    font-size: 1.5rem;
+    margin: 0;
+    
+}
+
+
+.desktop-text{
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: rgb(245, 11, 11);
+    display: none;
+}
+
+.alldiv{
+    margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  margin-top: 30px;
+}
+
+.amount{
+    padding-left: 2px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center; 
+   
+}
+.rupee-img{
+    width: 35px; 
+    height: 30px; 
+    display: flex;
+    margin-right: 5px;
+    display: inline-block;
+    
+}
+.amount-pay{
+    flex: 1; 
+    color: #848583; 
+    font-size: large;
+    
+}
+
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding-right: 10px;
+    
+}
+
+#paytext{
+    color: blue;
+}
+
+.pay-btn{
+    width: 100%;
+    background : #004b8d;
+    border: none;
+    border-radius: 10px;
+    margin: 0.3rem 0;
+    padding : 0.1rem;
+    padding-left: 10px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+#btnPhonepe{
+    display: flex;
+}
+
+#btnGooglepe{
+    display: flex;
+}
+#btnPaytm{
+    display: flex;
+}
+#btnBhim{
+    display: flex;
+}
+
+.line {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #575555;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    
+}
+
+.container {
+    
+    align-items: center; 
+    padding-left: 20px;
+    text-align: center;
+    display: flex;
+    
+    
+}
+.text3{
+    margin: auto;
+}
+
+.text4{
+    margin: auto;
+}
+
+
+input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #cfc9c9; 
+    padding: 5px; 
+    font-size: 16px;
+    outline: none; 
+    color: #034e9e;
+    font-weight: bold;
+    display: flex;
+    
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f3f3f7;
+    color: #007bff;
+    font-weight: bold;
+    border: 1px solid #034e9e;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 30px;
+    display: flex;
+    padding-block: 0.363em;
+    padding-inline: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+   
+   
+}
+
+
+.switch {
+    position: relative;
+    width: 58px;
+    height: 30px;
+    margin-left: 100px;
+    display: flexbox;
+  }
+  
+ 
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px; 
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+ 
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    top: 2px;
+    background-color: white;
+    border-radius: 50%; 
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+
+
+
+
+
+.footer {
+    background-color: #f5f5f5;
+    color: #777070;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+}
+
+.footer p {
+    margin: 0; 
+}
+.footer img {
+    max-width: 100px; 
+    margin-left: 5px;
+    vertical-align: middle;
+    height: 60px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .header {
+        padding: 10px 10px; 
+    }
+
+    .site-name {
+        font-size: 1.2rem; 
+    }
+
+   
+    .card {
+        max-width: 100%; 
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .header {
+        padding: 10px 10px; 
+    }
+
+    .site-name {
+        font-size: 1.2rem; 
+    }
+
+    
+    .card {
+        max-width: 100%; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop-text{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        
+    }
+
+    .alldiv{
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+   
+
+    .card{
+        display: none;
+    } 
+
+    #paytext{
+        display: none;
+    }
+
+    .pay-btn{
+        display: none;
+    }
+
+    #btnPhonepe{
+        display: none;
+    }
+
+    #btnGooglepe{
+        display: none;
+    }
+    #btnPaytm{
+        display: none;
+    }
+    #btnBhim{
+        display: none;
+    }
+
+   
+}
